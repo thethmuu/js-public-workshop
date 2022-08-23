@@ -1,5 +1,3 @@
 'use strict';
 
-(function getThis() {
-  console.log(this);
-})();
+console.log('Hello JS');
