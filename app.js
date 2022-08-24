@@ -1,16 +1,22 @@
 'use strict';
-// get from api and receive true
-const isLoggedIn = true;
+// var, let
+// var -> function scope
+// let -> block scope
 
-const user = {
-  name: 'Thet',
-  username: 'thethmuu',
-  email: 'thet@gmail.com',
-  isLoggedIn,
-};
+// don't use var
 
-// shorthand object assignment
+function testScope() {
+  var outerVar = 'outer var';
+  let outerLet = 'outer let';
+  console.log(outerVar, outerLet);
 
-user.isConfirmed = true;
+  if (true) {
+    var innerVar = 'inner var';
+    let innerLet = 'inner let';
+    console.log(innerVar, innerLet);
+  }
+    
+  console.log(innerVar, innerLet);
+}
 
-console.log(user);
+testScope();
