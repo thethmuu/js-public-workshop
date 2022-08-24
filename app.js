@@ -1,3 +1,16 @@
 'use strict';
+// get from api and receive true
+const isLoggedIn = true;
 
-console.log('Hello JS');
+const user = {
+  name: 'Thet',
+  username: 'thethmuu',
+  email: 'thet@gmail.com',
+  isLoggedIn,
+};
+
+// shorthand object assignment
+
+user.isConfirmed = true;
+
+console.log(user);
